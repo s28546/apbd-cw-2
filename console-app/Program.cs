@@ -17,13 +17,13 @@ namespace console_app
         
         public static float GetAverage(int[] arr)
         {
-            int suma = 0;
-            foreach (int num in arr)
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
             {
-                suma += num;
+                sum += arr[i];
             }
 
-            return ((float) suma )/ arr.Length;
+            return ((float) sum )/ arr.Length;
         }
         
         public static void Main(string[] args)

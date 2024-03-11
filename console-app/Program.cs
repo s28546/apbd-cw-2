@@ -18,9 +18,9 @@ namespace console_app
         public static float GetAverage(int[] arr)
         {
             int sum = 0;
-            foreach (int num in arr)
+            for (int i = 0; i < arr.Length; i++)
             {
-                sum += num;
+                sum += arr[i];
             }
 
             return ((float) sum )/ arr.Length;
